@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <script>
-        //input jam masuk
-        const jamMasuk = 
-        prompt('Masukan jam masuk ?');
+    <title>Menghitung kurs rupiah</title>
+        <script>
+            function kursrp(usd);
+    document.getElementById("totalkonversi").value = datausd * 14650;
+    }
+    </script>
+    </head>
 
-        //input jam keluar
-        const jamKeluar = 
-        prompt('Masukan jam keluar ?');
-
-        //selisih
-        const selisih = 
-        Number(jamKeluar) - 
-        Number(jamMasuk);
-
-        //tarif awal
-        const tarifAwal = 3000;
-
-        //tarif 2 jam
-        if(selisih <=2){
-            alert('Biaya keluaran : $(tarifAwal}');} else {
-                alert('Biaya keluaran : ${tarifAkhir}'); 
-                }else {
-                    const tarifAkhir = tarifAwal + (selisih - 2) *1000;
-                    alert('Biaya keluaran : ${tarifAkhir}');
-                }
-                </script>
-           
+    <body>
+        <div>
+            Menghitung Nilai Kurs Dollar ke Rupiah(1 USD = Rp.14.650)
+            <br>
+            Masukan USD: <input type="text" name="usd" onchange="kursrp(this.value">
+            <br>
+            Hasil Rupiah: <input type="text" id="totalkonversi" disabled>
+            </div>
+            
+    </body>
+    
 </body>
-
 </html>
